@@ -1,0 +1,497 @@
+@startuml
+
+title __PROTOBUF's Class Diagram__\n
+
+  namespace com.mgtv.lib.protobuf {
+    class com.mgtv.lib.protobuf.HomeInfo {
+        {static} + registerAllExtensions()
+        - HomeInfo()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    class com.mgtv.lib.protobuf.HomeInfo.Home {
+        {static} + ID_FIELD_NUMBER : int
+        {static} + NAME_FIELD_NUMBER : int
+        {static} - DEFAULT_INSTANCE : Home
+        {static} - PARSER : Parser<Home>
+        - id_ : long
+        - name_ : String
+        {static} + getDefaultInstance()
+        + getId()
+        + getName()
+        + getNameBytes()
+        {static} + newBuilder()
+        {static} + newBuilder()
+        {static} + parseDelimitedFrom()
+        {static} + parseDelimitedFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parser()
+        # dynamicMethod()
+        - Home()
+        - clearId()
+        - clearName()
+        - setId()
+        - setName()
+        - setNameBytes()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    class com.mgtv.lib.protobuf.HomeInfo.Home.Builder {
+        + clearId()
+        + clearName()
+        + getId()
+        + getName()
+        + getNameBytes()
+        + setId()
+        + setName()
+        + setNameBytes()
+        - Builder()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    interface com.mgtv.lib.protobuf.HomeInfo.HomeOrBuilder {
+        {abstract} + getId()
+        {abstract} + getName()
+        {abstract} + getNameBytes()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    class com.mgtv.lib.protobuf.UserInfo {
+        {static} + registerAllExtensions()
+        - UserInfo()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    class com.mgtv.lib.protobuf.UserInfo.User {
+        {static} + AGE_FIELD_NUMBER : int
+        {static} + ID_FIELD_NUMBER : int
+        {static} + PASSWORD_FIELD_NUMBER : int
+        {static} + SEX_FIELD_NUMBER : int
+        {static} + USERNAME_FIELD_NUMBER : int
+        {static} - DEFAULT_INSTANCE : User
+        {static} - PARSER : Parser<User>
+        - age_ : int
+        - id_ : long
+        - password_ : String
+        - sex_ : int
+        - username_ : String
+        + getAge()
+        {static} + getDefaultInstance()
+        + getId()
+        + getPassword()
+        + getPasswordBytes()
+        + getSex()
+        + getUsername()
+        + getUsernameBytes()
+        {static} + newBuilder()
+        {static} + newBuilder()
+        {static} + parseDelimitedFrom()
+        {static} + parseDelimitedFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parser()
+        # dynamicMethod()
+        - User()
+        - clearAge()
+        - clearId()
+        - clearPassword()
+        - clearSex()
+        - clearUsername()
+        - setAge()
+        - setId()
+        - setPassword()
+        - setPasswordBytes()
+        - setSex()
+        - setUsername()
+        - setUsernameBytes()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    class com.mgtv.lib.protobuf.UserInfo.User.Builder {
+        + clearAge()
+        + clearId()
+        + clearPassword()
+        + clearSex()
+        + clearUsername()
+        + getAge()
+        + getId()
+        + getPassword()
+        + getPasswordBytes()
+        + getSex()
+        + getUsername()
+        + getUsernameBytes()
+        + setAge()
+        + setId()
+        + setPassword()
+        + setPasswordBytes()
+        + setSex()
+        + setUsername()
+        + setUsernameBytes()
+        - Builder()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    interface com.mgtv.lib.protobuf.UserInfo.UserOrBuilder {
+        {abstract} + getAge()
+        {abstract} + getId()
+        {abstract} + getPassword()
+        {abstract} + getPasswordBytes()
+        {abstract} + getSex()
+        {abstract} + getUsername()
+        {abstract} + getUsernameBytes()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    class com.mgtv.lib.protobuf.VideoInfo {
+        {static} + registerAllExtensions()
+        - VideoInfo()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    class com.mgtv.lib.protobuf.VideoInfo.Video {
+        {static} + ATTACH_FIELD_NUMBER : int
+        {static} + CLIPID_FIELD_NUMBER : int
+        {static} + CLIPIMAGE_FIELD_NUMBER : int
+        {static} + CLIPNAME_FIELD_NUMBER : int
+        {static} + ID_FIELD_NUMBER : int
+        {static} + TITLE_FIELD_NUMBER : int
+        {static} - DEFAULT_INSTANCE : Video
+        {static} - PARSER : Parser<Video>
+        - clipId_ : String
+        - clipImage_ : String
+        - clipName_ : String
+        - id_ : long
+        - title_ : String
+        + getAttach()
+        + getClipId()
+        + getClipIdBytes()
+        + getClipImage()
+        + getClipImageBytes()
+        + getClipName()
+        + getClipNameBytes()
+        {static} + getDefaultInstance()
+        + getId()
+        + getTitle()
+        + getTitleBytes()
+        + hasAttach()
+        {static} + newBuilder()
+        {static} + newBuilder()
+        {static} + parseDelimitedFrom()
+        {static} + parseDelimitedFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parser()
+        # dynamicMethod()
+        - Video()
+        - clearAttach()
+        - clearClipId()
+        - clearClipImage()
+        - clearClipName()
+        - clearId()
+        - clearTitle()
+        - mergeAttach()
+        - setAttach()
+        - setClipId()
+        - setClipIdBytes()
+        - setClipImage()
+        - setClipImageBytes()
+        - setClipName()
+        - setClipNameBytes()
+        - setId()
+        - setTitle()
+        - setTitleBytes()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    class com.mgtv.lib.protobuf.VideoInfo.Video.AttachInfo {
+        {static} + DISPLAYS_FIELD_NUMBER : int
+        {static} + FORCE_FIELD_NUMBER : int
+        {static} - DEFAULT_INSTANCE : AttachInfo
+        {static} - PARSER : Parser<AttachInfo>
+        - displays_ : ProtobufList<String>
+        - force_ : int
+        {static} + getDefaultInstance()
+        + getDisplays()
+        + getDisplaysBytes()
+        + getDisplaysCount()
+        + getDisplaysList()
+        + getForce()
+        {static} + newBuilder()
+        {static} + newBuilder()
+        {static} + parseDelimitedFrom()
+        {static} + parseDelimitedFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parser()
+        # dynamicMethod()
+        - AttachInfo()
+        - addAllDisplays()
+        - addDisplays()
+        - addDisplaysBytes()
+        - clearDisplays()
+        - clearForce()
+        - ensureDisplaysIsMutable()
+        - setDisplays()
+        - setForce()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    class com.mgtv.lib.protobuf.VideoInfo.Video.AttachInfo.Builder {
+        + addAllDisplays()
+        + addDisplays()
+        + addDisplaysBytes()
+        + clearDisplays()
+        + clearForce()
+        + getDisplays()
+        + getDisplaysBytes()
+        + getDisplaysCount()
+        + getDisplaysList()
+        + getForce()
+        + setDisplays()
+        + setForce()
+        - Builder()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    interface com.mgtv.lib.protobuf.VideoInfo.Video.AttachInfoOrBuilder {
+        {abstract} + getDisplays()
+        {abstract} + getDisplaysBytes()
+        {abstract} + getDisplaysCount()
+        {abstract} + getDisplaysList()
+        {abstract} + getForce()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    class com.mgtv.lib.protobuf.VideoInfo.Video.Builder {
+        + clearAttach()
+        + clearClipId()
+        + clearClipImage()
+        + clearClipName()
+        + clearId()
+        + clearTitle()
+        + getAttach()
+        + getClipId()
+        + getClipIdBytes()
+        + getClipImage()
+        + getClipImageBytes()
+        + getClipName()
+        + getClipNameBytes()
+        + getId()
+        + getTitle()
+        + getTitleBytes()
+        + hasAttach()
+        + mergeAttach()
+        + setAttach()
+        + setAttach()
+        + setClipId()
+        + setClipIdBytes()
+        + setClipImage()
+        + setClipImageBytes()
+        + setClipName()
+        + setClipNameBytes()
+        + setId()
+        + setTitle()
+        + setTitleBytes()
+        - Builder()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    interface com.mgtv.lib.protobuf.VideoInfo.VideoOrBuilder {
+        {abstract} + getAttach()
+        {abstract} + getClipId()
+        {abstract} + getClipIdBytes()
+        {abstract} + getClipImage()
+        {abstract} + getClipImageBytes()
+        {abstract} + getClipName()
+        {abstract} + getClipNameBytes()
+        {abstract} + getId()
+        {abstract} + getTitle()
+        {abstract} + getTitleBytes()
+        {abstract} + hasAttach()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    class com.mgtv.lib.protobuf.VideoInfoWrapper {
+        {static} + registerAllExtensions()
+        - VideoInfoWrapper()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    class com.mgtv.lib.protobuf.VideoInfoWrapper.VideoWrapper {
+        {static} + VIDEO_FIELD_NUMBER : int
+        {static} - DEFAULT_INSTANCE : VideoWrapper
+        {static} - PARSER : Parser<VideoWrapper>
+        - video_ : ProtobufList<Video>
+        {static} + getDefaultInstance()
+        + getVideo()
+        + getVideoCount()
+        + getVideoList()
+        + getVideoOrBuilder()
+        + getVideoOrBuilderList()
+        {static} + newBuilder()
+        {static} + newBuilder()
+        {static} + parseDelimitedFrom()
+        {static} + parseDelimitedFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parseFrom()
+        {static} + parser()
+        # dynamicMethod()
+        - VideoWrapper()
+        - addAllVideo()
+        - addVideo()
+        - addVideo()
+        - clearVideo()
+        - ensureVideoIsMutable()
+        - removeVideo()
+        - setVideo()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    class com.mgtv.lib.protobuf.VideoInfoWrapper.VideoWrapper.Builder {
+        + addAllVideo()
+        + addVideo()
+        + addVideo()
+        + addVideo()
+        + addVideo()
+        + clearVideo()
+        + getVideo()
+        + getVideoCount()
+        + getVideoList()
+        + removeVideo()
+        + setVideo()
+        + setVideo()
+        - Builder()
+    }
+  }
+  
+
+  namespace com.mgtv.lib.protobuf {
+    interface com.mgtv.lib.protobuf.VideoInfoWrapper.VideoWrapperOrBuilder {
+        {abstract} + getVideo()
+        {abstract} + getVideoCount()
+        {abstract} + getVideoList()
+    }
+  }
+  
+
+  com.mgtv.lib.protobuf.HomeInfo +-down- com.mgtv.lib.protobuf.HomeInfo.Home
+  com.mgtv.lib.protobuf.HomeInfo +-down- com.mgtv.lib.protobuf.HomeInfo.HomeOrBuilder
+  com.mgtv.lib.protobuf.HomeInfo.Home .up.|> com.mgtv.lib.protobuf.HomeInfo.HomeOrBuilder
+  com.mgtv.lib.protobuf.HomeInfo.Home -up-|> com.google.protobuf.GeneratedMessageLite
+  com.mgtv.lib.protobuf.HomeInfo.Home +-down- com.mgtv.lib.protobuf.HomeInfo.Home.Builder
+  com.mgtv.lib.protobuf.HomeInfo.Home.Builder .up.|> com.mgtv.lib.protobuf.HomeInfo.HomeOrBuilder
+  com.mgtv.lib.protobuf.HomeInfo.Home.Builder -up-|> com.google.protobuf.GeneratedMessageLite.Builder
+  com.mgtv.lib.protobuf.UserInfo +-down- com.mgtv.lib.protobuf.UserInfo.User
+  com.mgtv.lib.protobuf.UserInfo +-down- com.mgtv.lib.protobuf.UserInfo.UserOrBuilder
+  com.mgtv.lib.protobuf.UserInfo.User .up.|> com.mgtv.lib.protobuf.UserInfo.UserOrBuilder
+  com.mgtv.lib.protobuf.UserInfo.User -up-|> com.google.protobuf.GeneratedMessageLite
+  com.mgtv.lib.protobuf.UserInfo.User +-down- com.mgtv.lib.protobuf.UserInfo.User.Builder
+  com.mgtv.lib.protobuf.UserInfo.User.Builder .up.|> com.mgtv.lib.protobuf.UserInfo.UserOrBuilder
+  com.mgtv.lib.protobuf.UserInfo.User.Builder -up-|> com.google.protobuf.GeneratedMessageLite.Builder
+  com.mgtv.lib.protobuf.VideoInfo +-down- com.mgtv.lib.protobuf.VideoInfo.Video
+  com.mgtv.lib.protobuf.VideoInfo +-down- com.mgtv.lib.protobuf.VideoInfo.VideoOrBuilder
+  com.mgtv.lib.protobuf.VideoInfo.Video .up.|> com.mgtv.lib.protobuf.VideoInfo.VideoOrBuilder
+  com.mgtv.lib.protobuf.VideoInfo.Video -up-|> com.google.protobuf.GeneratedMessageLite
+  com.mgtv.lib.protobuf.VideoInfo.Video o-- com.mgtv.lib.protobuf.VideoInfo.Video.AttachInfo : attach_
+  com.mgtv.lib.protobuf.VideoInfo.Video +-down- com.mgtv.lib.protobuf.VideoInfo.Video.AttachInfo
+  com.mgtv.lib.protobuf.VideoInfo.Video +-down- com.mgtv.lib.protobuf.VideoInfo.Video.AttachInfoOrBuilder
+  com.mgtv.lib.protobuf.VideoInfo.Video +-down- com.mgtv.lib.protobuf.VideoInfo.Video.Builder
+  com.mgtv.lib.protobuf.VideoInfo.Video.AttachInfo .up.|> com.mgtv.lib.protobuf.VideoInfo.Video.AttachInfoOrBuilder
+  com.mgtv.lib.protobuf.VideoInfo.Video.AttachInfo -up-|> com.google.protobuf.GeneratedMessageLite
+  com.mgtv.lib.protobuf.VideoInfo.Video.AttachInfo +-down- com.mgtv.lib.protobuf.VideoInfo.Video.AttachInfo.Builder
+  com.mgtv.lib.protobuf.VideoInfo.Video.AttachInfo.Builder .up.|> com.mgtv.lib.protobuf.VideoInfo.Video.AttachInfoOrBuilder
+  com.mgtv.lib.protobuf.VideoInfo.Video.AttachInfo.Builder -up-|> com.google.protobuf.GeneratedMessageLite.Builder
+  com.mgtv.lib.protobuf.VideoInfo.Video.Builder .up.|> com.mgtv.lib.protobuf.VideoInfo.VideoOrBuilder
+  com.mgtv.lib.protobuf.VideoInfo.Video.Builder -up-|> com.google.protobuf.GeneratedMessageLite.Builder
+  com.mgtv.lib.protobuf.VideoInfoWrapper +-down- com.mgtv.lib.protobuf.VideoInfoWrapper.VideoWrapper
+  com.mgtv.lib.protobuf.VideoInfoWrapper +-down- com.mgtv.lib.protobuf.VideoInfoWrapper.VideoWrapperOrBuilder
+  com.mgtv.lib.protobuf.VideoInfoWrapper.VideoWrapper .up.|> com.mgtv.lib.protobuf.VideoInfoWrapper.VideoWrapperOrBuilder
+  com.mgtv.lib.protobuf.VideoInfoWrapper.VideoWrapper -up-|> com.google.protobuf.GeneratedMessageLite
+  com.mgtv.lib.protobuf.VideoInfoWrapper.VideoWrapper +-down- com.mgtv.lib.protobuf.VideoInfoWrapper.VideoWrapper.Builder
+  com.mgtv.lib.protobuf.VideoInfoWrapper.VideoWrapper.Builder .up.|> com.mgtv.lib.protobuf.VideoInfoWrapper.VideoWrapperOrBuilder
+  com.mgtv.lib.protobuf.VideoInfoWrapper.VideoWrapper.Builder -up-|> com.google.protobuf.GeneratedMessageLite.Builder
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

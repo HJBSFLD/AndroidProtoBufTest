@@ -1,0 +1,20 @@
+//指定proto的语法 不写默认proto2
+syntax = "proto3";
+//指定proto文件输出的包名
+package com.mgtv.lib.protobuf;
+//指定proto文件对应的java实体类类名
+option java_outer_classname = "UserInfo";
+message User {
+    int64 id =1;
+    string username =2;
+    string password =3;
+    int32 sex =4;
+    int32 age=5;
+
+    //required 字段只能也必须出现 1 次
+    //optional 字段可出现 0 次或1次
+    //repeated 字段可出现任意多次
+    //double float int32、int64、uint64、uint32、string、bool bytes....
+    //字段编号：0 ~ 536870911（除去 19000 到 19999 之间的数字）
+    //字段规则 类型 名称 = 字段编号;
+}

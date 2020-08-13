@@ -1,0 +1,22 @@
+//指定proto的语法 不写默认proto2
+syntax = "proto3";
+//指定proto文件输出的包名
+package com.mgtv.lib.protobuf;
+//指定proto文件对应的java实体类类名
+option java_outer_classname = "VideoInfo";
+
+message Video {
+     int64 id = 1;
+     string clipId = 2;
+     string clipImage = 3;
+     string clipName = 4;
+     string title = 5;
+     AttachInfo attach = 6;
+   //  repeated AttachInfo attachList = 7;
+    // map<string,AttachInfo> attachMap = 8;
+
+     message AttachInfo {
+          int32 force = 1;
+          repeated string displays =2;
+     }
+}

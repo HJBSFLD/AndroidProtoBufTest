@@ -1,0 +1,10 @@
+//指定proto的语法 不写默认proto2
+syntax = "proto3";
+//指定proto文件输出的包名
+package com.mgtv.lib.protobuf;
+//指定proto文件对应的java实体类类名
+option java_outer_classname = "VideoInfoWrapper";
+import "VideoInfo.proto";
+message VideoWrapper {
+    repeated Video video =1;
+}
